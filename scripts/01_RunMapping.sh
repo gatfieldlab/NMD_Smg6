@@ -96,6 +96,8 @@ pipelineQC_STAR -i mapping_data/ \
 	   -s _${Prefix} \
 	   -a ${Prefix}_samples.txt
 
+Rscript PlotQC.R
+
 
 
 ######################################################################
