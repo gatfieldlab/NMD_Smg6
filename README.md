@@ -19,7 +19,7 @@ Scripts based on pipeline (see pipeline GitHub repository)
 
 
 ### 01_RNASeq_RunMapping.sh: ###
-* Cleaning and Trimming of reads
+* Cleaning and trimming of reads
 * Sequential mapping to mouse rRNA, human rRNA, mouse tRNA, and mouse genom
 
 
