@@ -57,6 +57,10 @@ done
 ######################################################################
 # STAR mapping
 
+### Prepare STAR genomes before mapping !!!
+### Prepare STAR genomes before mapping !!!
+### Prepare STAR genomes before mapping !!!
+
 # Mouse rRNA - Step 1
 echo 'STAR mapping to Mus musculus rRNA'
 for infile in $(ls *.trimmed.fq); do

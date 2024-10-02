@@ -63,6 +63,12 @@ pipeline_get_barcodes.sh -s ${Nb_max_seq} \
 
 
 
+### Prepare STAR genomes before mapping !!! and edit config file !!!
+### Prepare STAR genomes before mapping !!! and edit config file !!!
+### Prepare STAR genomes before mapping !!! and edit config file !!!
+
+
+
 echo "meta_pipeline_STAR_sequentialmapping.sh"
 echo "sequential mapping to mouse rRNA, human rRNA, mouse tRNA, and mouse genome"
 meta_pipeline_STAR_sequentialmapping.sh -o mapping_data/ \
