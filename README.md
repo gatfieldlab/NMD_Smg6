@@ -7,9 +7,21 @@ Not submitted yet.
 
 ## Scripts
 
-### 01_RunMapping.sh: ###
+### 01_RiboSeq_RunMapping.sh: ###
 Scripts based on pipeline (see pipeline GitHub repository)
 * Cleaning and trimming of reads
 * Sequential mapping to mouse rRNA, human rRNA, mouse tRNA, and mouse genome
 * Quality control plots
 
+
+### 02_RiboSeq_ReadCountBins.R ###
+* A-site count in bins
+
+
+### 01_RNASeq_RunMapping.sh: ###
+* Cleaning and Trimming of reads
+* Sequential mapping to mouse rRNA, human rRNA, mouse tRNA, and mouse genom
+
+
+### 02_RNASeq_ReadCount.R ###
+* Read count in genes

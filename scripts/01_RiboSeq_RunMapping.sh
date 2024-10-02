@@ -8,7 +8,7 @@ echo 'Start of the job' $DATE
 ######################################################################
 ######################################################################
 ### Variables to define ### 
-Prefix='NovaSeq'
+Prefix='RiboSeq'
 Run_nb=2371
 Nb_max_seq=1000000 # 0 >> no limit; default >> 10mio
 
@@ -54,7 +54,7 @@ module add pipeline/0.3.2;
 module add rpfTools/1.2.0;
 
 
-
+######################################################################
 echo "pipeline_get_barcodes.sh"
 pipeline_get_barcodes.sh -s ${Nb_max_seq} \
 			 -c config/${Prefix}_pipeline_conf-riboprof_umi_STARonly_sequentialmapping.sh \
