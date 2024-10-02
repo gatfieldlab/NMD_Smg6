@@ -5,9 +5,9 @@ Arpa et al., David Gatfield (2024)
 
 Not submitted yet.
 
-### Scripts ###
+## Scripts
 
-## 01_RunMapping.sh:
+### 01_RunMapping.sh: ###
 Scripts based on pipeline (see pipeline GitHub repository)
 * Cleaning and trimming of reads
 * Sequential mapping to mouse rRNA, human rRNA, mouse tRNA, and mouse genome
