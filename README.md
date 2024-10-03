@@ -18,6 +18,10 @@ Scripts based on pipeline (see pipeline GitHub repository)
 * A-site count in bins
 
 
+### 03_Immunopeptidomics.R ###
+* Immunopeptidomics results plots
+
+
 ### 01_RNASeq_RunMapping.sh: ###
 * Cleaning and trimming of reads
 * Sequential mapping to mouse rRNA (v. 39.111), human rRNA (v. 38.111), mouse tRNA (v. 39.111), and mouse genome (v. 39.111)
@@ -25,3 +29,5 @@ Scripts based on pipeline (see pipeline GitHub repository)
 
 ### 02_RNASeq_ReadCount.R ###
 * Read count in genes
+
+
