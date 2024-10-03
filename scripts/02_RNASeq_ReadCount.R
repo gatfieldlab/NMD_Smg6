@@ -179,7 +179,7 @@ txdb = txdbmaker::makeTxDbFromGFF(file=GTF_GENOME, format='gtf') # 149076 transc
 
 ######################################################################
 # Read count
-print('Counts of reads (only filtered on rRNA and tRNA) mapped on genome ')
+print('Counts of reads mapped on genome ')
 print('Each annotated element is a feature')
 RNA_Counts_ALL <- GenomicAlignments::summarizeOverlaps(GTF_split, FILES$bam, mode="Union")
 colnames(RNA_Counts_ALL) = FILES$Sample
