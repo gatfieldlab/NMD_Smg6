@@ -123,7 +123,7 @@ head(full_df_matrix)
 head(full_df_matrix_log)
 
 # log transformation
-full_df_matrix_log[seq(2, ncol(full_df_matrix_log))] = apply(full_df_matrix_log[seq(2, ncol(full_df_matrix_log))], 2, log)
+full_df_matrix_log[seq(2, ncol(full_df_matrix_log))] = apply(full_df_matrix_log[seq(2, ncol(full_df_matrix_log))], 2, log10)
 
 
 head(full_df_matrix); dim(full_df_matrix)
@@ -187,7 +187,7 @@ Ctrls = left_join(Ctrls, unique(df[c('psmed_peptide', 'pepsource')]))
 
 Ctrls_log = Ctrls
 Ctrls_log[Ctrls_log == 0] = 1
-Ctrls_log[c(1:2)] = apply(Ctrls_log[c(1:2)], 2, log)
+Ctrls_log[c(1:2)] = apply(Ctrls_log[c(1:2)], 2, log10)
 head(Ctrls_log); dim(Ctrls_log)
 Ctrls_log = Ctrls_log[order(Ctrls_log$pepsource),]
 
@@ -207,7 +207,7 @@ LdKOs = left_join(LdKOs, unique(df[c('psmed_peptide', 'pepsource')]))
 
 LdKOs_log = LdKOs
 LdKOs_log[LdKOs_log == 0] = 1
-LdKOs_log[c(1:2)] = apply(LdKOs_log[c(1:2)], 2, log)
+LdKOs_log[c(1:2)] = apply(LdKOs_log[c(1:2)], 2, log10)
 head(LdKOs_log); dim(LdKOs_log)
 LdKOs_log = LdKOs_log[order(LdKOs_log$pepsource),]
 
@@ -264,7 +264,7 @@ Ctrl_mdf_copy = Ctrl_mdf
 Ctrl_mdf$WT = factor(Ctrl_mdf$WT, levels=rev(seq(0, max(Ctrl_mdf$WT))))
 
 pdf(file=paste0(path_Immuno, 'PeptideIntensity_Matrices_Ctrl.pdf'), width = 8, height=8)
-ggplot(Ctrl_mdf, aes(x=MUT, y=WT, fill=log(count), label=count))+
+ggplot(Ctrl_mdf, aes(x=MUT, y=WT, fill=log10(count), label=count))+
   geom_tile()+
   geom_text()+
   scale_fill_gradient(high="red2", low="white") + theme_classic() + ggtitle('Ctrl') + scale_x_discrete(position = "top") + ylab('WT') + coord_fixed()
@@ -302,7 +302,7 @@ LdKO_mdf_copy = LdKO_mdf
 LdKO_mdf$WT = factor(LdKO_mdf$WT, levels=rev(seq(0, max(LdKO_mdf$WT))))
 
 pdf(file=paste0(path_Immuno, 'PeptideIntensity_Matrices_LdKO.pdf'), width = 8, height=8)
-ggplot(LdKO_mdf, aes(x=MUT, y=WT, fill=log(count), label=count))+
+ggplot(LdKO_mdf, aes(x=MUT, y=WT, fill=log10(count), label=count))+
   geom_tile()+
   geom_text()+
   scale_fill_gradient(high="red2", low="white") + theme_classic() + ggtitle('LdKO') + scale_x_discrete(position = "top") + ylab('WT') + coord_fixed()
