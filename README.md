@@ -1,5 +1,5 @@
 # NMD Smg6 project
-Nonsense-mediated mRNA decay inhibition via Smg6 triggers adaptive and innate immune responses through distinct mechanisms, and prevents cancer development in a murine hepatocellular carcinoma model 
+Targeting the endonuclease SMG6 to enhance adaptive and innate immune responses prevents cancer in a mouse hepatocellular carcinoma model![Uploading image.png…]()
 
 Arpa et al., David Gatfield (2024)
 
