@@ -3,7 +3,6 @@ Targeting the endonuclease SMG6 to enhance adaptive and innate immune responses 
 
 Arpa et al., David Gatfield (2024)
 
-Not submitted yet.
 
 ## Scripts
 
