@@ -1,5 +1,5 @@
 # NMD Smg6 project
-Targeting the endonuclease SMG6 to enhance adaptive and innate immune responses prevents cancer in a mouse hepatocellular carcinoma model
+SMG6-dependent nonsense-mediated decay maintains dsRNA homeostasis and suppresses immunogenic transcripts in a hepatocellular carcinoma model
 
 Arpa et al., David Gatfield (submitted)
 
